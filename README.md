@@ -1,2 +1,3 @@
 # AHDS_A2
-Assignment 2
+
+Taken from https://github.com/mattragoza/LiGAN
