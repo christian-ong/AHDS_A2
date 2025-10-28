@@ -1,0 +1,9 @@
+{
+  "name": "ligan-deps",
+  "version-string": "1.0.0",
+  "builtin-baseline": "cde14c8d95bb4a12bc3e45e758b6dd5580217c6c",
+  "dependencies": [
+    "boost",
+    "eigen3"
+  ]
+}

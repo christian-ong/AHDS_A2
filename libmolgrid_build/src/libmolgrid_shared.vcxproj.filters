@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\libmolgrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\atom_typer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\exampleref_providers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_extractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_provider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_dataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_maker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\coordinateset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\coord_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_interpolater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\cartesian_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\string_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\libmolgrid\src\grid_maker.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\coordinateset.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\transform.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\grid_interpolater.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{190E8BF9-6770-3944-8A81-1D83CA487DBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4B0E8B1B-9A0A-3CDE-A3C5-18336593212D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

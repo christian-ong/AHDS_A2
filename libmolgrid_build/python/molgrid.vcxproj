@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEA0222A-EB72-310C-A32E-F774BC3CA115}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>molgrid</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 13.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">molgrid.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">molgrid.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">molgrid.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">molgrid.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Debug";molgrid_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>molgrid.dir\Debug</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"Debug\";molgrid_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/Debug/molgrid.dll" -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\lib\x64\cudart_static.lib;..\lib\Debug\molgrid.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_python312-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\python312_d.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_filesystem-vc143-mt-gd-x64-1_89.lib;OPENBABEL3_LIBRARIES-NOTFOUND.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_unit_test_framework-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_program_options-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_iostreams-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_random-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_serialization-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_thread-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_atomic-vc143-mt-gd-x64-1_89.lib;synchronization.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_chrono-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_date_time-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\boost_container-vc143-mt-gd-x64-1_89.lib;C:\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/lib/Debug/molgrid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/Debug/molgrid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Release";molgrid_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>molgrid.dir\Release</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"Release\";molgrid_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/Release/molgrid.dll" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\lib\x64\cudart_static.lib;..\lib\Release\molgrid.lib;C:\vcpkg\installed\x64-windows\lib\boost_python312-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\python312.lib;C:\vcpkg\installed\x64-windows\lib\boost_filesystem-vc143-mt-x64-1_89.lib;OPENBABEL3_LIBRARIES-NOTFOUND.lib;C:\vcpkg\installed\x64-windows\lib\boost_unit_test_framework-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_program_options-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_iostreams-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_random-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_serialization-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_thread-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_atomic-vc143-mt-x64-1_89.lib;synchronization.lib;C:\vcpkg\installed\x64-windows\lib\boost_chrono-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_date_time-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_container-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/lib/Release/molgrid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/Release/molgrid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="MinSizeRel";molgrid_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>molgrid.dir\MinSizeRel</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"MinSizeRel\";molgrid_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/MinSizeRel/molgrid.dll" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\lib\x64\cudart_static.lib;..\lib\MinSizeRel\molgrid.lib;C:\vcpkg\installed\x64-windows\lib\boost_python312-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\python312.lib;C:\vcpkg\installed\x64-windows\lib\boost_filesystem-vc143-mt-x64-1_89.lib;OPENBABEL3_LIBRARIES-NOTFOUND.lib;C:\vcpkg\installed\x64-windows\lib\boost_unit_test_framework-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_program_options-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_iostreams-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_random-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_serialization-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_thread-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_atomic-vc143-mt-x64-1_89.lib;synchronization.lib;C:\vcpkg\installed\x64-windows\lib\boost_chrono-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_date_time-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_container-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/lib/MinSizeRel/molgrid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/MinSizeRel/molgrid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo";molgrid_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>molgrid.dir\RelWithDebInfo</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_PYTHON_NO_LIB;BOOST_PYTHON_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;Py_NO_LINK_LIB;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"RelWithDebInfo\";molgrid_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/RelWithDebInfo/molgrid.dll" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\lib\x64\cudart_static.lib;..\lib\RelWithDebInfo\molgrid.lib;C:\vcpkg\installed\x64-windows\lib\boost_python312-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\python312.lib;C:\vcpkg\installed\x64-windows\lib\boost_filesystem-vc143-mt-x64-1_89.lib;OPENBABEL3_LIBRARIES-NOTFOUND.lib;C:\vcpkg\installed\x64-windows\lib\boost_unit_test_framework-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_program_options-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_iostreams-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_random-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_serialization-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_thread-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_atomic-vc143-mt-x64-1_89.lib;synchronization.lib;C:\vcpkg\installed\x64-windows\lib\boost_chrono-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_date_time-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\boost_container-vc143-mt-x64-1_89.lib;C:\vcpkg\installed\x64-windows\lib\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/lib/RelWithDebInfo/molgrid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/bin/RelWithDebInfo/molgrid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\CMakeFiles\7902b222e224dc4c6b2aa50830f62a28\bindings.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Inserting docstrings binding.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DOUTNAME=C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/bindings.cpp" -P set_docstrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.in.cpp;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Inserting docstrings binding.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DOUTNAME=C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/bindings.cpp" -P set_docstrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.in.cpp;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Inserting docstrings binding.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DOUTNAME=C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/bindings.cpp" -P set_docstrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.in.cpp;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Inserting docstrings binding.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DOUTNAME=C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/bindings.cpp" -P set_docstrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.in.cpp;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\cmake\Modules\FindNumPy.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\__init__.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\setup.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\torch_bindings.py;C:\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-targets.cmake;C:\vcpkg\installed\x64-windows\share\python\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\pythoninterp\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\cmake\Modules\FindNumPy.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\__init__.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\setup.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\torch_bindings.py;C:\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-targets.cmake;C:\vcpkg\installed\x64-windows\share\python\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\pythoninterp\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\cmake\Modules\FindNumPy.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\__init__.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\setup.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\torch_bindings.py;C:\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-targets.cmake;C:\vcpkg\installed\x64-windows\share\python\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\pythoninterp\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/python/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\cmake\Modules\FindNumPy.cmake;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\__init__.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\setup.py;C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\torch_bindings.py;C:\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_bimap\boost_bimap-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_filesystem\boost_filesystem-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_foreach\boost_foreach-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_graph\boost_graph-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_lambda\boost_lambda-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_math\boost_math-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_multi_index\boost_multi_index-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_parameter\boost_parameter-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_map\boost_property_map-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_property_tree\boost_property_tree-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python\boost_python-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\boost_python312\boost_python312-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_tti\boost_tti-targets.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config-version.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-config.cmake;C:\vcpkg\installed\x64-windows\share\boost_xpressive\boost_xpressive-targets.cmake;C:\vcpkg\installed\x64-windows\share\python\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\pythoninterp\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.h" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings_grids.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\ZERO_CHECK.vcxproj">
+      <Project>{06594FBB-7BBE-3D8B-ABAF-FDF1A3814CEF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\src\libmolgrid_shared.vcxproj">
+      <Project>{68D8D6E7-0A18-3FFA-8B47-59D7A79D5780}</Project>
+      <Name>libmolgrid_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 13.0.targets" />
+  </ImportGroup>
+</Project>

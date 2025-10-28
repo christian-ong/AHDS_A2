@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\test\test_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4B0E8B1B-9A0A-3CDE-A3C5-18336593212D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

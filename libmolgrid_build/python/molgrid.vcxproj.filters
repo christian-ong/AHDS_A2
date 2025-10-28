@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\python\bindings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings_grids.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\bindings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\CMakeFiles\7902b222e224dc4c6b2aa50830f62a28\bindings.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\python\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{239AAC3D-95FE-38BE-9BED-79F236EE14DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{190E8BF9-6770-3944-8A81-1D83CA487DBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4B0E8B1B-9A0A-3CDE-A3C5-18336593212D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

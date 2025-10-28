@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPythonInterp.cmake
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/cmake/Modules/FindOpenBabel3.cmake
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/test/CMakeLists.txt
+C:/vcpkg/installed/x64-windows/share/boost/BoostConfig.cmake
+C:/vcpkg/installed/x64-windows/share/boost/BoostConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_unit_test_framework/boost_unit_test_framework-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_unit_test_framework/boost_unit_test_framework-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_unit_test_framework/boost_unit_test_framework-targets.cmake
+C:/vcpkg/installed/x64-windows/share/pythoninterp/vcpkg-cmake-wrapper.cmake

@@ -1,0 +1,73 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindFrameworks.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPythonLibs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/cmake/Modules/FindNumPy.cmake
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/CMakeLists.txt
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/__init__.py
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/setup.py
+C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/python/torch_bindings.py
+C:/vcpkg/installed/x64-windows/share/boost/BoostConfig.cmake
+C:/vcpkg/installed/x64-windows/share/boost/BoostConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/boost_bimap/boost_bimap-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_bimap/boost_bimap-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_bimap/boost_bimap-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_filesystem/boost_filesystem-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_filesystem/boost_filesystem-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_filesystem/boost_filesystem-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_foreach/boost_foreach-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_foreach/boost_foreach-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_foreach/boost_foreach-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_graph/boost_graph-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_graph/boost_graph-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_graph/boost_graph-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/boost_graph/boost_graph-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/boost_graph/boost_graph-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_lambda/boost_lambda-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_lambda/boost_lambda-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_lambda/boost_lambda-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_math/boost_math-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_math/boost_math-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_math/boost_math-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_multi_index/boost_multi_index-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_multi_index/boost_multi_index-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_multi_index/boost_multi_index-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_parameter/boost_parameter-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_parameter/boost_parameter-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_parameter/boost_parameter-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_map/boost_property_map-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_map/boost_property_map-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_map/boost_property_map-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_tree/boost_property_tree-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_tree/boost_property_tree-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_property_tree/boost_property_tree-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python/boost_python-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python/boost_python-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python/boost_python-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python312/boost_python312-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python312/boost_python312-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python312/boost_python312-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python312/boost_python312-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/boost_python312/boost_python312-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_system/boost_system-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_tti/boost_tti-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_tti/boost_tti-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_tti/boost_tti-targets.cmake
+C:/vcpkg/installed/x64-windows/share/boost_xpressive/boost_xpressive-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/boost_xpressive/boost_xpressive-config.cmake
+C:/vcpkg/installed/x64-windows/share/boost_xpressive/boost_xpressive-targets.cmake
+C:/vcpkg/installed/x64-windows/share/python/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/pythoninterp/vcpkg-cmake-wrapper.cmake

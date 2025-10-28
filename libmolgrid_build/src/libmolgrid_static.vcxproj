@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2E34FD9-8276-3554-8B98-EADD721C2A1F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libmolgrid_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 13.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libmolgrid_static.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libmolgrid_static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libmolgrid_static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libmolgrid_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">molgrid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>libmolgrid_static.dir\Debug</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Debug"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -O0 -std=c++14 --generate-code=arch=compute_52,code=[compute_52,sm_52] --generate-code=arch=compute_60,code=[compute_60,sm_60] --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] -Xcompiler=/EHsc</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>true</GPUDebugInfo>
+      <HostDebugInfo>true</HostDebugInfo>
+      <Optimization></Optimization>
+      <Runtime>MDd</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>libmolgrid_static.dir\Release</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="Release"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -lineinfo -std=c++14 --generate-code=arch=compute_52,code=[compute_52,sm_52] --generate-code=arch=compute_60,code=[compute_60,sm_60] --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] -Xcompiler=/EHsc</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <HostDebugInfo>true</HostDebugInfo>
+      <Optimization></Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>libmolgrid_static.dir\MinSizeRel</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="MinSizeRel"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_52,code=[compute_52,sm_52] --generate-code=arch=compute_60,code=[compute_60,sm_60] --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] -Xcompiler="/EHsc -Ob1"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>libmolgrid_static.dir\RelWithDebInfo</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;BOOST_TEST_NO_LIB;BOOST_TEST_DYN_LINK;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_DYN_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_DYN_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_DYN_LINK=1;BOOST_IOSTREAMS_NO_LIB;BOOST_IOSTREAMS_DYN_LINK;BOOST_RANDOM_NO_LIB;BOOST_RANDOM_DYN_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_DYN_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_DYN_LINK;BOOST_THREAD_USE_DLL;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_DYN_LINK;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_DYN_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_52,code=[compute_52,sm_52] --generate-code=arch=compute_60,code=[compute_60,sm_60] --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] -Xcompiler="/EHsc -Zi -Ob1"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid" "-BC:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build" --check-stamp-file "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/Skole/MSc 3/4 Applied Healthcare Data Science/a2/libmolgrid_build/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\libmolgrid.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\managed_grid.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\quaternion.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\transform.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\atom_typer.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coordinateset.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\exampleref_providers.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_extractor.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_provider.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\example_dataset.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_maker.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_interpolater.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\coord_cache.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\common.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\grid_io.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\cartesian_grid.h" />
+    <ClInclude Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\include\libmolgrid\string_cache.h" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\libmolgrid.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\atom_typer.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\exampleref_providers.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_extractor.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_provider.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\example_dataset.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_maker.cpp">
+      <ObjectFileName>$(IntDir)/grid_maker.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\grid_maker.cu">
+      <CompileOut>$(IntDir)/grid_maker.cu.obj</CompileOut>
+    </CudaCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\coordinateset.cpp">
+      <ObjectFileName>$(IntDir)/coordinateset.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\coordinateset.cu">
+      <CompileOut>$(IntDir)/coordinateset.cu.obj</CompileOut>
+    </CudaCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\coord_cache.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\transform.cpp">
+      <ObjectFileName>$(IntDir)/transform.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\transform.cu">
+      <CompileOut>$(IntDir)/transform.cu.obj</CompileOut>
+    </CudaCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_io.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\grid_interpolater.cpp">
+      <ObjectFileName>$(IntDir)/grid_interpolater.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <CudaCompile Include="..\..\libmolgrid\src\grid_interpolater.cu">
+      <CompileOut>$(IntDir)/grid_interpolater.cu.obj</CompileOut>
+    </CudaCompile>
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\cartesian_grid.cpp" />
+    <ClCompile Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid\src\string_cache.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\chris\OneDrive - Danmarks Tekniske Universitet\Skole\MSc 3\4 Applied Healthcare Data Science\a2\libmolgrid_build\ZERO_CHECK.vcxproj">
+      <Project>{06594FBB-7BBE-3D8B-ABAF-FDF1A3814CEF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 13.0.targets" />
+  </ImportGroup>
+</Project>
